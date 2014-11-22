@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.smb" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme"
+        android:uiOptions="splitActionBarWhenNarrow">
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.example.administrator.smb.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.administrator.smb.ActionBarStyle"
+            android:theme="@style/CustomTheme"/>
+        <activity android:name=".CustomBackButton"/>
+        <activity android:name="com.example.administrator.smb.ActionMenuItem" />
+        <activity android:name=".ActionBarTop" />
+        <activity android:name=".ActionModeTop" />
+        <activity android:name=".ActionBarList"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".Tabs"/>
+        <activity android:name=".tab.ActionItemTab"/>
+        <activity android:name=".tab.ActionBarTab" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".tab.ActionBarTabAndTabHost" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".RecentActivity" />
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".DialerActivity" />
+        <activity android:name=".ActionBarCustomTabOnTop"/>
+        <activity android:name=".CustomTabOnTopActivity"/>
+    </application>
+</manifest>
